@@ -6,7 +6,7 @@ CREATE TABLE `authorities_tbl` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `authority` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-)
+);
 
 insert into authorities_tbl(id,authority) 
 	values(1,'ROLE_ADMIN');
@@ -26,8 +26,8 @@ CREATE TABLE `user_tbl` (
 );
 
 -- admin@123 - password
-insert into tbl_user(name, password, gender, nationality, licence, authority_id)
-	values('admin','$2a$10$hbxecwitQQ.dDT4JOFzQAulNySFwEpaFLw38jda6Td.Y/cOiRzDFu','Male','Indian','LIC123',1);	
+insert into user_tbl(name, password, gender, city, authority_id)
+	values('admin','$2a$10$hbxecwitQQ.dDT4JOFzQAulNySFwEpaFLw38jda6Td.Y/cOiRzDFu','Male','New York',1);	
 
 CREATE TABLE `address_tbl` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -55,4 +55,3 @@ CREATE TABLE `ticket_tbl` (
   CONSTRAINT `ticket_tbl_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user_tbl` (`id`),
   CONSTRAINT `ticket_tbl_ibfk_2` FOREIGN KEY (`address_id`) REFERENCES `address_tbl` (`id`)
 );
-
