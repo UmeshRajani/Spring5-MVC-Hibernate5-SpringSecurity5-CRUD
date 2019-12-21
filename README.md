@@ -25,4 +25,4 @@ Follow the steps to run project locally:
 
 Now This is your application up and now to learn diferent things like Spring Security, Hiberante need to make different tweak so you will learn yourself
 
-Required parts explaned [here] (https://withubr.com/spring5mvc-hibernate5-springsecurity5-annotationconfig){:target="_blank"}
+Required parts explaned [here](https://withubr.com/spring5mvc-hibernate5-springsecurity5-annotationconfig)
