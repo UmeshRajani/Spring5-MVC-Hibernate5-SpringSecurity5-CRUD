@@ -24,3 +24,5 @@ Follow the steps to run project locally:
 8. Login with admin/admin@123 credentials and you go..
 
 Now This is your application up and now to learn diferent things like Spring Security, Hiberante need to make different tweak so you will learn yourself
+
+Required parts explaned [here] (https://withubr.com/spring5mvc-hibernate5-springsecurity5-annotationconfig)
